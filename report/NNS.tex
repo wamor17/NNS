@@ -38,11 +38,20 @@ Keywords
 \IEEEpeerreviewmaketitle
 \section{Introducci\'on}
 
-Breve descripción de las redes neuronales\\
+******Breve descripción de las redes neuronales\\
 
-Breve descripción de la API de Spotify \\
+\subsection{API Web de Spotify \\}
+La API web de Spotify permite a los desarrolladores utilizar su aplicación para obtener datos del catálogo de música de Spotify. Los resultados de las peticiones a los servidores de Spotify dan como resultado archivos en formato JSON que proporciona información como artistas, álbumes y pistas directamente desde el catálogo de Spotify. Dependiendo de la autorización del usuario, la API también puede proporcionar a los programadores acceso a datos relacionados con el usuario, es decir, listas de reproducción y músicas guardadas en la biblioteca del usuario.\\
 
-Objetivos del proyecto y justificación \\
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=1.8in]{./images/APIWebSpotify.jpg}
+    \DeclareGraphicsExtensions.
+    \caption{ Logo oficial de la API Web de Spotify. }
+\end{figure}
+
+Con la API web de Spositfy se pueden crear aplicaciones basando la lógica de negocio en el catálogo de música de Spotify. Estas aplicaciones son básicamente aplicaciones web integradas en el navegador basado en Chromium y bajo el sandbox que incluye Spotify. El desarrollo de una aplicacioń de Spotify es prácticamente idéntico que cualquier aplicación HTML5 que se crea hoy en día. Se puede combinar todo el conjunto de herramientas que se tienen a disposición como CSS, HTML y Javascript, así como cualquier framework Javascript como jQuery.
+
 \subsection{Objetivo principal}
 La finalidad de este trabajo es, mediante la utilización de una Red Neuronal Artificial (ANN), clasificar un conjunto de canciones en uno de cuatro géneros posibles: Metal, Mexicano, Pop y Rock. Utilizando la ANN para realizar las etapas de entrenamiento y pruebas. Comparando los resultados de la ANN con el algoritmo del vecino más cercano.\\
 
@@ -66,7 +75,17 @@ La características que se pueden obtener utilizando la API de Spotify son los s
 	\item Tempo \\
 \end{itemize}
 
-Se crearon 4 Playlist en Spotify, las cuales hacen referencia a cada género musical que se desea clasificar. A cada Playlist se agregó un total de 40 canciones, teniendo en total 160 canciones de muestras, de las cuales se obtuvieron sus características musicales como se mencionó anteriormente. Del total de canciones 120 (30 de cada Playlist) se tomarán para la etapa de entrenamiento y 40 (10 de cada Playlist) para la etapa de pruebas.\\\\
+Se crearon 4 Playlist en Spotify, las cuales hacen referencia a cada género musical que se desea clasificar. A cada Playlist se agregó un total de 40 canciones, teniendo en total 160 canciones de muestras, de las cuales se obtuvieron sus características musicales como se mencionó anteriormente. Del total de canciones 120 (30 de cada Playlist) se tomarán para la etapa de entrenamiento y 40 (10 de cada Playlist) para la etapa de pruebas.\\
+
+\begin{figure}[htbp]
+	\centering
+	\subfigure{\includegraphics[scale=0.15]{./images/heavyMetalPlaylist.jpg}}
+	\subfigure{\includegraphics[scale=0.121]{./images/mexicanoPlaylist.jpg}}
+	\subfigure{\includegraphics[scale=0.125]{./images/rockPlaylist.jpg}}
+	\subfigure{\includegraphics[scale=0.125]{./images/popPlaylist.jpg}}
+	\caption{ Caratulas de las playlist creadas para ordenar las canciones que se utilizarán para entrenamiento y pruebas. }
+\end{figure}
+
 Spotify genera un ID único para cada usuario, canción, playlist, etc., el cual sirve para hacer referencia a cada elemento dentro de los servidores de Spotify. Proporcionando las claves Client ID, Client Secret, el id de la playlist y la canción, se pueden solicitar todas las características anteriormente mencionadas de cada canción de las 4 playlist. Para realizar este procedimiento, se creó un script de Node.js, con el cual se obtienen las once características para cada canción de las 4 playlist.\\
 
 \subsection{Etapa de entrenamiento}
@@ -94,7 +113,7 @@ Donde:\\
 	\item $S_{1}, S_{2}, S_{3} ... S_{11}$: son las características de la canción de entrada. \\
 \end{itemize}
 
-La clasificación de cada nueva canción, utilizando este algoritmo, se hará con la distancia menor de las tres distancias calculadas ya que es a la clase que más se acerca de acuerdo a sus características obtenidas con la API de Spotify.
+La clasificación de cada nueva canción, utilizando este algoritmo, se hará con la distancia menor de las tres distancias calculadas ya que es a la clase que más se acerca de acuerdo a sus características obtenidas con la API de Spotify.\\\\
 
 \section{Resultados}
 
@@ -125,7 +144,7 @@ Total & 22.50 \% & 77.50 \% \\
 \end{tabular}
 \end{table}
 
-La Tabla I. muestra el resultado del algoritmo del vecino más cercano. La información que nos proporciona este tabla, indica el grado de exactitud con el que el algoritmo puede clasificar una nueva canción. \\
+La Tabla I. muestra el resultado del algoritmo del vecino más cercano. La información que nos proporciona este tabla, indica el grado de exactitud con el que el algoritmo del vecino más cercano puede clasificar una nueva canción. \\
 
 \section{Concluciones}
 
