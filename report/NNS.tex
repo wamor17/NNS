@@ -9,6 +9,7 @@
 \usepackage{amsmath}
 \usepackage{array}
 \usepackage{multirow}
+\bibliography{myBibliography}
 
 \begin{document}
 \title{  Clasificación De Canciones Por Género Utilizando Una Red Neuroral Artificial Y La API De Spotify }
@@ -36,9 +37,20 @@ Keywords
 \end{IEEEkeywords}
 
 \IEEEpeerreviewmaketitle
-\section{Introducci\'on}
+\section{Introducción}
+En la búsqueda de entender y replicar los sentidos que tenemos los seres humanos; su funcionamiento, procesamiento de la señal y el entendimiento de como nuestro cuerpo humano percibe e interpreta el mundo exterior, la ciencia se ha encargado de replicar y, en algunos casos, mejorar los sentidos que poseemos o de recuperar sentidos como el oido o el tacto en miembros humanos inutilisables o perdidos. Pero todo va aún más allá, existen ciencias encargadas de estudiar como se genera el conocimiento, la conciencia y como es el proceso dentro de nuestro cerebro cuando se esta realizando una acción tan cotidiana como es el escribir, hablar o un proceso aún más complejo como lo es el aprender. "Todos los procesos del cuerpo humano se relacionan en alguna u otra forma con actividad de neuronas. Las neuronas son un componente relativamente simple del ser humano, pero cuando millones de ellas se conectan en forma conjunta se hacen muy poderosas. \\
+Lo que básicamente ocurre en una neurona biológica es lo siguiente: la neurona es estimulada o excitada a través de sus entradas (inputs) y cuando se alcanza un cierto umbral, la neurona se dispara o activa, pasando una señal hacia el axon. Así, el secreto de la "inteligencia", se sitúa dentro de estas neuronas interconectadas y de su interacción.\\
 
-******Breve descripción de las redes neuronales\\
+Por lo tanto, las Redes Neuronales biológicas:
+
+\begin{itemize}
+	\item Consisten en unidades de procesamiento que intercambian datos o información.
+	\item Se utilizan para reconocer patrones, incluyendo imágenes, manuscritos y secuencias de tiempo.
+	\item Tienen capacidad de aprender y mejorar su funcionamiento."[1]
+\end{itemize}
+
+\subsection{Redes Neuronales Artificiales \\}
+
 
 \subsection{API Web de Spotify \\}
 La API web de Spotify permite a los desarrolladores utilizar su aplicación para obtener datos del catálogo de música de Spotify. Los resultados de las peticiones a los servidores de Spotify dan como resultado archivos en formato JSON que proporciona información como artistas, álbumes y pistas directamente desde el catálogo de Spotify. Dependiendo de la autorización del usuario, la API también puede proporcionar a los programadores acceso a datos relacionados con el usuario, es decir, listas de reproducción y músicas guardadas en la biblioteca del usuario.\\
@@ -50,7 +62,7 @@ La API web de Spotify permite a los desarrolladores utilizar su aplicación para
     \caption{ Logo oficial de la API Web de Spotify. }
 \end{figure}
 
-Con la API web de Spositfy se pueden crear aplicaciones basando la lógica de negocio en el catálogo de música de Spotify. Estas aplicaciones son básicamente aplicaciones web integradas en el navegador basado en Chromium y bajo el sandbox que incluye Spotify. El desarrollo de una aplicacioń de Spotify es prácticamente idéntico que cualquier aplicación HTML5 que se crea hoy en día. Se puede combinar todo el conjunto de herramientas que se tienen a disposición como CSS, HTML y Javascript, así como cualquier framework Javascript como jQuery.
+Con la API web de Spositfy se pueden crear aplicaciones basando la lógica de negocio en el catálogo de música de Spotify. Estas aplicaciones son básicamente aplicaciones web integradas en el navegador basado en Chromium y bajo el sandbox que incluye Spotify. El desarrollo de una aplicación de Spotify es prácticamente idéntico que cualquier aplicación HTML5 que se crea hoy en día. Se puede combinar todo el conjunto de herramientas que se tienen a disposición como CSS, HTML y Javascript, así como cualquier framework Javascript como jQuery.
 
 \subsection{Objetivo principal}
 La finalidad de este trabajo es, mediante la utilización de una Red Neuronal Artificial (ANN), clasificar un conjunto de canciones en uno de cuatro géneros posibles: Metal, Mexicano, Pop y Rock. Utilizando la ANN para realizar las etapas de entrenamiento y pruebas. Comparando los resultados de la ANN con el algoritmo del vecino más cercano.\\
@@ -149,8 +161,9 @@ La Tabla I. muestra el resultado del algoritmo del vecino más cercano. La infor
 \section{Concluciones}
 
 \begin{thebibliography}{1}
-\item [1]
+\item [[1]] % Matich, D. J. (2001). Redes Neuronales: Conceptos Básicos y Aplicaciones. Historia, 55. Retrieved from https://www.frro.utn.edu.ar/repositorio/catedras/quimica/5_anio/%orientadora1/monograias/matich-redesneuronales.pdf
 \end{thebibliography}
+
 
 
 \end{document}
