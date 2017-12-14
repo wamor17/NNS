@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  13 DEC 2017 21:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  13 DEC 2017 21:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -808,7 +808,7 @@ Package pdftex.def Info: ./images/APIWebSpotify.jpg used on input line 64.
  [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <./images/APIWebSpotify.jpg>]
+]
 Underfull \hbox (badness 1817) in paragraph at lines 71--73
 []\OT1/ptm/m/n/10 La API de Spo-tify per-mi-te, adem[]as de ge-ne-rar una
  []
@@ -876,8 +876,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 108--110
 
  []
 
-[2 <./images/heavyMetalPlaylist.jpg> <./images/mexicanoPlaylist.jpg> <./images/
-rockPlaylist.jpg> <./images/popPlaylist.jpg>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2 <./images/APIWebSpotify.jpg> <./images/heavyMetalPlaylist.jpg> <./images/me
+xicanoPlaylist.jpg> <./images/rockPlaylist.jpg> <./images/popPlaylist.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 121--123
 
  []
@@ -896,6 +899,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 129--130
 Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
  []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -939,7 +945,7 @@ e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2
 ist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2016/texmf-dist/fonts
 /type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw
 /times/utmri8a.pfb>
-Output written on NNS.pdf (3 pages, 273458 bytes).
+Output written on NNS.pdf (3 pages, 273454 bytes).
 PDF statistics:
  60 PDF objects out of 1000 (max. 8388607)
  39 compressed objects within 1 object stream
