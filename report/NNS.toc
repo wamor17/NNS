@@ -1,0 +1,11 @@
+\select@language {spanish}
+\contentsline {section}{\numberline {I}Introducci\IeC {\'o}n}{1}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {I-A}}Redes Neuronales Artificiales \\}{1}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {I-B}}API Web de Spotify \\}{1}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {I-C}}Objetivo principal}{2}
+\contentsline {section}{\numberline {II}Metodolog\'ia}{2}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-A}}Etapa de entrenamiento}{2}
+\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-B}}Vecino mas cercano}{3}
+\contentsline {section}{\numberline {III}Resultados}{3}
+\contentsline {section}{\numberline {IV}Conclusiones}{3}
+\contentsline {section}{Referencias}{3}
