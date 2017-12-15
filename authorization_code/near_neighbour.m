@@ -20,8 +20,7 @@ mexicanoTesting = mexicano(minTesting:40,:);
 popTesting = pop(minTesting:40,:);
 rockTesting = rock(minTesting:40,:);
 
-[f, c] = size(metal);
-numberTesting = f - minTesting + 1;
+numberTesting = 10;
 
 %	** ETAPA DE ENTRENAMIENTO **
 %	OBTENEMOS EL PROMEDIO DE CADA CARACTERISTICA Y CREAMOS UN PROTOTIPO PARA CADA CLASE Y
