@@ -29,7 +29,7 @@ Correo: wa.morenoramirez@ugto.mx}}
 \maketitle
 \renewcommand\abstractname{Abstract}
 \begin{abstract}
-Here we go. \\
+Se hizo uso de una red neuronal artificial para crear un clasificador de música en 4 géneros musicales, Pop, Rock, Metal y Mexicano. \\
 \end{abstract}
 
 
@@ -87,7 +87,7 @@ La características que se pueden obtener utilizando la API de Spotify son los s
 	\item \textbf{Instrumentalness:} Medidad que predice si la canción es instrumental o no.
 	\item \textbf{Liveness:} Medida que indica la presencia de la audiencia en la grabación.
 	\item \textbf{Valance:} Medida que indica el nivel de positividad en una canción.
-	\item \textbf{Tempo:} El temp general de la canción en BPM.  \\
+	\item \textbf{Tempo:} El temp general de la canción en BPM.\cite{spo}  \\
 \end{itemize}
 
 \subsection{Objetivo principal}
@@ -138,11 +138,12 @@ Donde:\\
 	\item $S_{1}, S_{2}, S_{3} ... S_{11}$: son las características de la canción de entrada. \\
 \end{itemize}
 
-La clasificación de cada nueva canción, utilizando este algoritmo, se hizó con la distancia menor de las tres distancias calculadas ya que es a la clase que más se acerca de acuerdo a sus características obtenidas con la API de Spotify.\\\\
+La clasificación de cada nueva canción, utilizando este algoritmo, se hizó con la distancia menor de las tres distancias calculadas ya que es a la clase que más se acerca de acuerdo a sus características obtenidas con la API de Spotify.
+Un punto a aclarar es que este algoritmo fue probado con 10 elementos de cada clase.\\\\
 
 \section{Resultados}
 
-La red neuronal obtenida clasificó el 72.2 \% de las canciones en el generó correcto. Con la clasificación vista en la matriz de confusión de la tabla 1 se puede observar que la mayoría de los resultados de cada clase fueron verdaderos positivos, sin embargo la mejor clasificación se presento en el género pop y mexicano con una exactitud del 80.4\% y 92.1 \% respectivamente, demostrando que  ambos géneros son satisfactoriamente diferentes para que una canción futura se puda clasificar entre los dos géneros. Aunque el género Rock fue el que mas presento falsos positivos entre las diversas clases un caso especial se presentó entre este género y el metal, el 32.5 \% de falsos positivos de rock correspodian al metal, cosa que realmente no sorprende pues ambas, en algunos casos, usan los mismos instrumentos musicales, y por momentos llegan al mismo punto, ambos son rock solo que uno es mas ''pesado". 
+La red neuronal obtenida clasificó el 72.2 \% de las canciones en el generó correcto. Con la clasificación vista en la matriz de confusión de la tabla 1 se puede observar que la mayoría de los resultados de cada clase fueron verdaderos positivos, sin embargo la mejor clasificación se presento en el género pop y mexicano con una exactitud del 80.4\% y 92.1 \% respectivamente, demostrando que  ambos géneros son satisfactoriamente diferentes para que una canción futura se pueda clasificar entre los dos géneros. Aunque el género Rock fue el que mas presento falsos positivos entre las diversas clases un caso especial se presentó entre este género y el metal, el 32.5 \% de falsos positivos de rock correspodían al metal, cosa que realmente no sorprende pues ambas, en algunos casos, usan los mismos instrumentos musicales, y por momentos llegan al mismo punto, ambos son rock solo que uno es mas ''pesado". 
  
 
 \begin{table}[h]
@@ -161,6 +162,7 @@ La red neuronal obtenida clasificó el 72.2 \% de las canciones en el generó co
 	\end{table}
 
 
+ 
 
 \begin{table}[h]
 \renewcommand{\arraystretch}{1.3}
@@ -185,7 +187,8 @@ Total & 22.50 \% & 77.50 \% \\
 \end{tabular}
 \end{table}
 
-La tabla 2. muestra el resultado del algoritmo del vecino más cercano. La información que nos proporciona este tabla, indica el grado de exactitud con el que el algoritmo del vecino más cercano puede clasificar una nueva canción. \\
+La tabla 2. muestra el resultado del algoritmo del vecino más cercano. La información que nos proporciona este tabla, indica el grado de exactitud con el que el algoritmo del vecino más cercano puede clasificar una nueva canción.
+Al hacer la comparación  de los clasificadores nos damos cuenta de la superioridad de la red neuronal pues en dos géneros, Pop y Mexicano los resultados son alarmantes pues no el algoritmo no fue capaz de clasificar 1 resultado.  \\
 
 \section{Conclusiones}
 La red neuronal artificial obtenida da suficiente exactitud para uso recreativo, lo que nos dice que las características usadas fueron las indicadas para hacer este tipo de clasificación. Cabe destacar que algunos elementos se les considera que no fue errónea su clasificación si no que la canción tambien puede pertenecer a ese genero y sería interesante explorar una clasificación con multiples salidas. 
@@ -197,6 +200,10 @@ Matich, D. J. (2001). Redes Neuronales: Conceptos Básicos y Aplicaciones. Histo
 \emph{$https://www.frro.utn.edu.ar/repositorio/catedras/quimica$
 $/5 _ anio/orientadora1/monograias/matich-redesneuronales.pdf$}
 
+
+\bibitem{spo}  
+Spotify for Developers, Platform Documentation, from
+{$https://beta.developer.spotify.com/documentation/$}
 
 \end{thebibliography}
 
