@@ -1,0 +1,205 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a -G -R
+Relation:     songs
+Instances:    161
+Attributes:   12
+              Danceability
+              Energy
+              Key
+              Loudness
+              Mode
+              Speechiness
+              Acousticness
+              Instrumentalness
+              Liveness
+              Valance
+              Tempo
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    2.604600505473157
+    Node 4    -10.446370042037126
+    Node 5    -9.353675880143557
+    Node 6    -8.253177026273425
+    Node 7    -6.025298364272604
+    Node 8    3.869468671759311
+    Node 9    7.480778706831972
+    Node 10    -1.3544112676113578
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -1.5909642612054253
+    Node 4    4.153158077813097
+    Node 5    0.8457881506292779
+    Node 6    -5.561716611274049
+    Node 7    -4.258309558396737
+    Node 8    -2.833244940082015
+    Node 9    -4.498493210585619
+    Node 10    10.679791779255055
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -3.923656529399704
+    Node 4    -8.364531723211286
+    Node 5    4.6989879277711095
+    Node 6    -0.2665701792822397
+    Node 7    8.662977633663198
+    Node 8    -9.608817031791542
+    Node 9    2.7891478619676953
+    Node 10    -7.285503522321003
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -2.7366172264045967
+    Node 4    8.785432921853738
+    Node 5    5.845113405909596
+    Node 6    7.544060706059971
+    Node 7    -11.412529472326838
+    Node 8    -2.548033007858221
+    Node 9    -6.678968894880893
+    Node 10    -14.492420799527448
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    5.798461989799143
+    Attrib Danceability    0.9630956832614498
+    Attrib Energy    2.6368570450579774
+    Attrib Key    -1.337819406419169
+    Attrib Loudness    -10.96100370224456
+    Attrib Mode    5.664180992161073
+    Attrib Speechiness    -4.894199671946269
+    Attrib Acousticness    5.987880174570342
+    Attrib Instrumentalness    4.4239378804960845
+    Attrib Liveness    6.546919526141774
+    Attrib Valance    5.352751826384026
+    Attrib Tempo    0.7211628006239291
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    1.5422130033702874
+    Attrib Danceability    5.17444047478349
+    Attrib Energy    -5.231925219084208
+    Attrib Key    -2.8969571007667345
+    Attrib Loudness    8.604721084345913
+    Attrib Mode    -0.3570431476348292
+    Attrib Speechiness    2.917303543051943
+    Attrib Acousticness    -1.3973700525376165
+    Attrib Instrumentalness    0.7738248726485764
+    Attrib Liveness    3.9332265015462013
+    Attrib Valance    2.521244932416904
+    Attrib Tempo    -2.039077790064775
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -0.6697841936779944
+    Attrib Danceability    4.785073992404547
+    Attrib Energy    3.0865553518719544
+    Attrib Key    -0.067429321574916
+    Attrib Loudness    7.661953725833761
+    Attrib Mode    -0.0323243681023289
+    Attrib Speechiness    7.281081452877968
+    Attrib Acousticness    -0.5741311448278835
+    Attrib Instrumentalness    -4.311985555696845
+    Attrib Liveness    -0.30342748073441067
+    Attrib Valance    -6.465133544169895
+    Attrib Tempo    1.5933920175345913
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -5.279978588331324
+    Attrib Danceability    9.950438240791827
+    Attrib Energy    -8.70610323250163
+    Attrib Key    2.0491655546162075
+    Attrib Loudness    15.733567278305017
+    Attrib Mode    0.7028404914859328
+    Attrib Speechiness    1.2510869320286735
+    Attrib Acousticness    2.651990690909732
+    Attrib Instrumentalness    -1.9194225524478083
+    Attrib Liveness    -0.9072609099487541
+    Attrib Valance    -3.9923150452634504
+    Attrib Tempo    2.0611218159358122
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    5.048609211088814
+    Attrib Danceability    -0.15356125118219402
+    Attrib Energy    10.93819150974808
+    Attrib Key    -0.2466193295950834
+    Attrib Loudness    -7.209220722852873
+    Attrib Mode    -1.3713316500036496
+    Attrib Speechiness    2.312369906574392
+    Attrib Acousticness    3.0792668255760405
+    Attrib Instrumentalness    3.4865088205648074
+    Attrib Liveness    -0.14555012246353471
+    Attrib Valance    0.5337229362176018
+    Attrib Tempo    -3.9354443721189174
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -3.740312324343494
+    Attrib Danceability    9.05169510253364
+    Attrib Energy    9.355790728765136
+    Attrib Key    -2.989161021729557
+    Attrib Loudness    8.158540629760207
+    Attrib Mode    2.771830549278764
+    Attrib Speechiness    6.315903772385496
+    Attrib Acousticness    -0.15774624549369418
+    Attrib Instrumentalness    0.3346198251161772
+    Attrib Liveness    -0.6362553933814187
+    Attrib Valance    -5.8336542863206
+    Attrib Tempo    -3.438395566188913
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    -0.39745653934362885
+    Attrib Danceability    0.05611158692992542
+    Attrib Energy    -7.859698838052516
+    Attrib Key    -0.1416426665777675
+    Attrib Loudness    -4.563397169220378
+    Attrib Mode    2.547999099046521
+    Attrib Speechiness    -8.049096213044233
+    Attrib Acousticness    6.406907386202128
+    Attrib Instrumentalness    -2.8050652379768457
+    Attrib Liveness    6.778884944739787
+    Attrib Valance    4.083389481692784
+    Attrib Tempo    1.6307203436532258
+Class metal
+    Input
+    Node 0
+Class mexicano
+    Input
+    Node 1
+Class pop
+    Input
+    Node 2
+Class rock
+    Input
+    Node 3
+
+
+Time taken to build model: 6.16 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         109               67.7019 %
+Incorrectly Classified Instances        52               32.2981 %
+Kappa statistic                          0.5694
+Mean absolute error                      0.1716
+Root mean squared error                  0.3633
+Relative absolute error                 45.7624 %
+Root relative squared error             83.8984 %
+Total Number of Instances              161     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,700    0,157    0,596      0,700    0,644      0,516    0,859     0,606     metal
+                 0,850    0,050    0,850      0,850    0,850      0,800    0,965     0,904     mexicano
+                 0,780    0,058    0,821      0,780    0,800      0,734    0,919     0,852     pop
+                 0,375    0,165    0,429      0,375    0,400      0,220    0,686     0,414     rock
+Weighted Avg.    0,677    0,107    0,675      0,677    0,674      0,569    0,858     0,695     
+
+=== Confusion Matrix ===
+
+  a  b  c  d   <-- classified as
+ 28  1  0 11 |  a = metal
+  2 34  1  3 |  b = mexicano
+  2  1 32  6 |  c = pop
+ 15  4  6 15 |  d = rock
+

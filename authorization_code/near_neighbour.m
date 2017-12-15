@@ -7,16 +7,20 @@ pop = csvread('csv/pop.csv');
 rock = csvread('csv/rock.csv');
 
 % 	TOMAMOS LAS PRIMERAS 30 FILAS DE DATOS DE CADA GENERO PARA LA ETAPA DE ENTRENAMIENTO
-metalTraining = metal(1:30,:);
-mexicanoTraining = mexicano(1:30,:);
-popTraining = pop(1:30,:);
-rockTraining = rock(1:30,:);
+maxTraining = 30;
+metalTraining = metal(1:maxTraining,:);
+mexicanoTraining = mexicano(1:maxTraining,:);
+popTraining = pop(1:maxTraining,:);
+rockTraining = rock(1:maxTraining,:);
 
 % 	TOMAMOS LAS 10 FILAS RESTANTES DE CADA GENERO, PARA LA ETAPA DE PRUEBAS
-metalTesting = metal(31:40,:);
-mexicanoTesting = mexicano(31:40,:);
-popTesting = pop(31:40,:);
-rockTesting = rock(31:40,:);
+minTesting = 31;
+metalTesting = metal(minTesting:40,:);
+mexicanoTesting = mexicano(minTesting:40,:);
+popTesting = pop(minTesting:40,:);
+rockTesting = rock(minTesting:40,:);
+
+numberTesting = 10;
 
 %	** ETAPA DE ENTRENAMIENTO **
 %	OBTENEMOS EL PROMEDIO DE CADA CARACTERISTICA Y CREAMOS UN PROTOTIPO PARA CADA CLASE Y
@@ -63,7 +67,7 @@ for i=1:10;
 
 	if( distMexicana_Metal(i) > distMexicana_Mexicana(i) && distMexicana_Metal(i) > distMexicana_Pop(i) && distMexicana_Metal(i) > distMexicana_Rock(i) )
 		clusterSongsMexicana(1,i) = '1';
-	elseif( distMexicana_Mexicana(i) > distMexicana_Metal(i) && distMexicana_Mexicana(i) > distMexicana_Pop(i) && distMexicana_Mexicana(i) > distMexicana_Rock(i) )
+	elseif( distMexicana_Mexicana(i) >= distMexicana_Metal(i) && distMexicana_Mexicana(i) >= distMexicana_Pop(i) && distMexicana_Mexicana(i) >= distMexicana_Rock(i) )
 		clusterSongsMexicana(1,i) = '2';
 		correctMexicana = correctMexicana + 1;
 	elseif( distMexicana_Pop(i) > distMexicana_Metal(i) && distMexicana_Pop(i) > distMexicana_Mexicana(i) && distMexicana_Pop(i) > distMexicana_Rock(i) )
@@ -105,24 +109,61 @@ for i=1:10;
 		clusterSongsRock(1,i) = '4';
 		correctRock = correctRock + 1;
 	end
-
 end
 
 %	LIMPIAMOS LA CONSOLA
 system('clear');
 
-clusterSongsMetal
-correctMetal
-fprintf('\n');
+fprintf('\n\n\t\t\t\t ***** CLASIFICACION DE CANCIONES POR GENERO ***** \n');
+fprintf('\t\t\t     ***** UTILIZANDO EL ALGORITMO DEL VECINO MAS CERCANO ***** \n');
+fprintf('\n\t\t\t\t\t *** PLAYLIST HEAVY METAL *** \n\n');
+fprintf(' Correctas = %.2f porciento \n Incorrectas = %.2f porciento \n\n', (correctMetal*100)/10, ((10-correctMetal)*100)/10);
+fprintf('  Clasificados incorrectamente: \n\n');
+fprintf('  No. \t\t\t\t\t\t Caracteristicas \n\n');
 
-clusterSongsMexicana
-correctMexicana
-fprintf('\n');
+for i=1:numberTesting;
+	if( clusterSongsMetal(i) != '1' )
+		fprintf('   %i     %.4f,  %.4f,  %.4f,  %.4f,  %.4f,  %.4f,  %.4f,  %.4f,  %.4f,  %.4f,  %.4f \n',i, metalTesting(1,1), metalTesting(1,2), metalTesting(1,3), metalTesting(1,4), metalTesting(1,5), metalTesting(1,6), metalTesting(1,7), metalTesting(1,8), metalTesting(1,9), metalTesting(1,10), metalTesting(1,11));
+	end
+end
 
-clusterSongsPop
-correctPop
-fprintf('\n');
 
-clusterSongsRock
-correctRock
+fprintf('\n\n\t\t\t\t\t *** PLAYLIST MEXICANA *** \n\n');
+fprintf(' Correctas = %.2f porciento \n Incorrectas = %.2f porciento \n\n', (correctMexicana*100)/10, ((10-correctMexicana)*100)/10);
+fprintf('  Clasificados incorrectamente: \n\n');
+fprintf('  No. \t\t\t\t\t\t Caracteristicas \n\n');
+
+for i=1:numberTesting;
+	if( clusterSongsMexicana(i) != '2' )
+		fprintf('   %i     %.4f,  %.4f,  %.4f,  %.4f,  %.4f,  %.4f,  %.4f,  %.4f,  %.4f,  %.4f,  %.4f \n',i, mexicanoTesting(1,1), mexicanoTesting(1,2), mexicanoTesting(1,3), mexicanoTesting(1,4), mexicanoTesting(1,5), mexicanoTesting(1,6), mexicanoTesting(1,7), mexicanoTesting(1,8), mexicanoTesting(1,9), mexicanoTesting(1,10), mexicanoTesting(1,11));
+	end
+end
+
+fprintf('\n\n\t\t\t\t\t *** PLAYLIST POP *** \n\n');
+fprintf(' Correctas = %.2f porciento \n Incorrectas = %.2f porciento \n\n', (correctPop*100)/10, ((10-correctPop)*100)/10);
+fprintf('  No. \t\t\t\t\t\t Caracteristicas \n\n');
+
+for i=1:numberTesting;
+	if( clusterSongsPop(i) != '3' )
+		fprintf('   %i     %.4f,  %.4f,  %.4f,  %.4f,  %.4f,  %.4f,  %.4f,  %.4f,  %.4f,  %.4f,  %.4f \n',i, popTesting(1,1), popTesting(1,2), popTesting(1,3), popTesting(1,4), popTesting(1,5), popTesting(1,6), popTesting(1,7), popTesting(1,8), popTesting(1,9), popTesting(1,10), popTesting(1,11));
+	end
+end
+
+fprintf('\n\n\t\t\t\t\t *** PLAYLIST ROCK *** \n\n');
+fprintf(' Correctas = %.2f porciento \n Incorrectas = %.2f porciento \n\n', (correctRock*100)/10, ((10-correctRock)*100)/10);
+fprintf('  Clasificados incorrectamente: \n\n');
+fprintf('  No. \t\t\t\t\t\t Caracteristicas \n\n');
+
+for i=1:numberTesting;
+	if( clusterSongsRock(i) != '4' )
+		fprintf('   %i     %.4f,  %.4f,  %.4f,  %.4f,  %.4f,  %.4f,  %.4f,  %.4f,  %.4f,  %.4f,  %.4f \n',i, rockTesting(1,1), rockTesting(1,2), rockTesting(1,3), rockTesting(1,4), rockTesting(1,5), rockTesting(1,6), rockTesting(1,7), rockTesting(1,8), rockTesting(1,9), rockTesting(1,10), rockTesting(1,11));
+	end
+end
+
+correctasTotal = ((correctMetal*100)/10 + (correctMexicana*100)/10 + (correctPop*100)/10 + (correctRock*100)/10)/4;
+incorrectasTotal = (((10-correctMetal)*100)/10 + ((10-correctMexicana)*100)/10 + ((10-correctPop)*100)/10 + ((10-correctRock)*100)/10)/4;
+fprintf('\n\n  Porcentajes generales \n\n  Correctas = %.2f porciento \n  Incorrectas %.2f porciento \n',correctasTotal, incorrectasTotal);
+
+
+fprintf('\n\n\n\n\n\n\n\n');
 
