@@ -50,18 +50,23 @@ Por lo tanto, las Redes Neuronales biológicas:
 \begin{itemize}
 	\item Consisten en unidades de procesamiento que intercambian datos o información.
 	\item Se utilizan para reconocer patrones, incluyendo imágenes, manuscritos y secuencias de tiempo.
-	\item Tienen capacidad de aprender y mejorar su funcionamiento."\cite{walter}
+	\item Tienen capacidad de aprender y mejorar su funcionamiento." \cite{walter}
 \end{itemize}
 
-\subsection{Redes Neuronales Artificiales \\}
+\subsection{Redes Neuronales Artificiales}
+Con las investigaciones realizadas por Alan Turing, en 1936, se dieron las primeras bases para estudiar el cerebro como una nueva forma de ver el mundo de la computación. Sin embargo, los fundamentos de la computación neuronal fueron creadas por dos científicos teóricos, el neurofisiólogo Warren McCulloch y el Matemático Walter Pitts, quienes en 1943 publicaron una teoría cerca de la forma de trabajar de las neuronas. Logrando modelar una red neuronal simple mediante circuitos eléctricos.\\
+Como complemento, en 1949, Donald Hebb fue el primero en explicar los procesos del aprendizaje desde un punto de vista psicológico.\\
+Y, en 1957, Frank Rosenblatt comenzó el desarrollo del Perceptron. Este tipo de red, es la más antigua y, aunque en sus inicios tenía muchas limitaciones; actualmente sus usos son variados entre los cuales se encuentran la identificación de patrones.\\
 
+Una red neuronal artificial puede definirse como un conjunto de "redes interconectadas masivamente en paralelo de elementos simples y con organización jerárquica, las cuales intentan interactuar con los objetos del mundo real del mismo modo que lo hace el sistema nervioso biológico." \cite{walter} \\
+Las redes neuronales artificiales presentan un gran número de características semejantes a las del cerebro. Pueden aprender de la experiencia, de generalizar de casos anteriores a nuevos casos, de abstraer características esenciales a partir de entradas que representan información irrelevante, etc. Esto hace que ofrezcan numerosas ventajas y que este tipo de tecnología tenga tantas aplicaciones en múltiples áreas.\\
 
-\subsection{API Web de Spotify \\}
+\subsection{API Web de Spotify}
 La API (Application Programming Interface) web de Spotify permite a los desarrolladores utilizar su aplicación para obtener datos del catálogo de música de Spotify. Los resultados de las peticiones a los servidores de Spotify dan como resultado archivos en formato JSON que proporciona información como artistas, álbumes y pistas directamente desde el catálogo de Spotify. Dependiendo de la autorización del usuario, la API también puede proporcionar a los programadores acceso a datos relacionados con el usuario, es decir, listas de reproducción y músicas guardadas en la biblioteca del usuario.\\
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=1.8in]{./images/APIWebSpotify.jpg}
+    \includegraphics[scale=0.20]{./images/APIWebSpotify.jpg}
     \DeclareGraphicsExtensions.
     \caption{ Logo oficial de la API Web de Spotify. }
 \end{figure}
@@ -72,17 +77,17 @@ La API de Spotify permite, además de generar una estadística muy completa del 
 La características que se pueden obtener utilizando la API de Spotify son los siguientes: \\
 
 \begin{itemize}
-	\item Danceability : Una medida de 0.0 a 1.0 que tan buena es la canción para bailar.
-	\item Energy : Una medida de 0.0 a 1.0 que indica el nivel de intensidad actividad.
-	\item Key : La clave en que se encuentra la canción.
-	\item Loudness : El volumén general en decibeles.
-	\item Mode : Indica la modiladad de la canción.
-	\item Speechiness : El nivel, de 0.0 a 1.0, de discurso en la canción.
-	\item Acousticness : Una medida que indica que si la canción es acústica.
-	\item Instrumentalness : Medidad que predice si la canción es instrumental o no.
-	\item Liveness : Medida que indica la presencia de la audiencia en la grabación.
-	\item Valance : Medida que indica el nivel de positividad en una canción.
-	\item Tempo : El temp general de la canción en BPM.  \\
+	\item \textbf{Danceability:} Una medida de 0.0 a 1.0 que tan buena es la canción para bailar.
+	\item \textbf{Energy:} Una medida de 0.0 a 1.0 que indica el nivel de intensidad actividad.
+	\item \textbf{Key:} La clave en que se encuentra la canción.
+	\item \textbf{Loudness:} El volumén general en decibeles.
+	\item \textbf{Mode:} Indica la modiladad de la canción.
+	\item \textbf{Speechiness:} El nivel, de 0.0 a 1.0, de discurso en la canción.
+	\item \textbf{Acousticness:} Una medida que indica que si la canción es acústica.
+	\item \textbf{Instrumentalness:} Medidad que predice si la canción es instrumental o no.
+	\item \textbf{Liveness:} Medida que indica la presencia de la audiencia en la grabación.
+	\item \textbf{Valance:} Medida que indica el nivel de positividad en una canción.
+	\item \textbf{Tempo:} El temp general de la canción en BPM.  \\
 \end{itemize}
 
 \subsection{Objetivo principal}
@@ -108,8 +113,15 @@ Para acceder a los datos Spotify genera un ID único para cada usuario, canción
 Una ves obtenidas las características de cada canción, se adecuan al formato ARFF (Attribute-Relation File Format) de Weka, siendo este el archivo con el que se alimenta la Red Neuronal Artificial para la etapa de entrenamiento.\\
 Dentro de la configuración de Weka, se selecciona, como método de clasificación, una Red Neuronal de un Perceptron Multicapa para realizar la etapa de entrenamiento.\\
 
-Para probar la red neuronal Weka da la oportunidad de realizar una validación cruzada, por lo que se eleigíó que el software realizara una validación de este tipo con 10 iteraciones.
+Para probar la red neuronal Weka da la oportunidad de realizar una validación cruzada, por lo que se eleigíó que el software realizara una validación de este tipo con 10 iteraciones.\\
 
+\begin{figure}[htbp]
+	\centering
+	\subfigure{\includegraphics[scale=0.20]{./images/redNeuronal.png}}
+	\caption{ Diagrama de la Red Neuronal de un Perceptron Multicapa generado por Weka. }
+\end{figure}
+
+El diagrama de la Red Neuronal de un Perceptron Multicapa que se creó con ayuda de Weka, mostrado en la Figura 3., muestra once Neuronas en la capa de entrada correspondientes a las once características para cada canción, siete en la capa oculta y cuatro para la capa de salida que corresponden a los cuatro generos en los que se desea clasificar las canciones.
 
 \subsection{Vecino mas cercano}
 Para comparar la exactitud de la red neuronal, se implementó el algoritmo del vecino m\'as cercano, utilizado en la etapa de pruebas de los métodos de clasificación supervizada. Este m\'etodo consiste en obtener la distancia euclidiana, ecuaci\'on (1), entre el elemento de prueba con cada una de las cuatro clases.
@@ -181,7 +193,9 @@ La red neuronal artificial obtenida da suficiente exactitud para uso recreativo,
 \begin{thebibliography}{1}
 
 \bibitem{walter}  
-Matich, D. J. (2001). Redes Neuronales: Conceptos Básicos y Aplicaciones. Historia, 55. Retrieved from %https://www.frro.utn.edu.ar/repositorio/catedras/quimica/5_anio/orientadora1/monograias/matich-redesneuronales.pdf
+Matich, D. J. (2001). Redes Neuronales: Conceptos Básicos y Aplicaciones. Historia, 55. Retrieved from \\
+\emph{$https://www.frro.utn.edu.ar/repositorio/catedras/quimica$
+$/5 _ anio/orientadora1/monograias/matich-redesneuronales.pdf$}
 
 
 \end{thebibliography}
