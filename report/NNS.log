@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  14 DEC 2017 19:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  14 DEC 2017 20:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -770,25 +770,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--60
  []
 
 
-Underfull \hbox (badness 2150) in paragraph at lines 61--63
+Underfull \hbox (badness 2150) in paragraph at lines 61--62
 []\OT1/ptm/m/n/10 Una red neu-ro-nal ar-ti-fi-cial pue-de de-fi-nir-se co-mo un
 
  []
 
 
-Underfull \hbox (badness 1859) in paragraph at lines 61--63
-\OT1/ptm/m/n/10 de ca-rac-ter[]^^Psti-cas se-me-jan-tes a las del ce-re-bro. Pu
-e-den
- []
-
-
-Underfull \hbox (badness 1953) in paragraph at lines 61--63
-\OT1/ptm/m/n/10 a nue-vos ca-sos, de abs-traer ca-rac-ter[]^^Psti-cas esen-cia-
-les a
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 61--63
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
  []
 
@@ -796,13 +784,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 61--63
 
 
 ]
-Underfull \hbox (badness 1874) in paragraph at lines 65--66
-[]\OT1/ptm/m/n/10 La API (Ap-pli-ca-tion Pro-gram-ming In-ter-fa-ce) web de
+Underfull \hbox (badness 1859) in paragraph at lines 65--66
+\OT1/ptm/m/n/10 de ca-rac-ter[]^^Psti-cas se-me-jan-tes a las del ce-re-bro. Pu
+e-den
  []
 
 
-Underfull \hbox (badness 2012) in paragraph at lines 65--66
-\OT1/ptm/m/n/10 del usua-rio, la API tam-bi[]en pue-de pro-por-cio-nar a los
+Underfull \hbox (badness 1953) in paragraph at lines 65--66
+\OT1/ptm/m/n/10 a nue-vos ca-sos, de abs-traer ca-rac-ter[]^^Psti-cas esen-cia-
+les a
  []
 
 
@@ -810,29 +800,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
 
+
+Underfull \hbox (badness 1874) in paragraph at lines 68--69
+[]\OT1/ptm/m/n/10 La API (Ap-pli-ca-tion Pro-gram-ming In-ter-fa-ce) web de
+ []
+
+
+Underfull \hbox (badness 2012) in paragraph at lines 68--69
+\OT1/ptm/m/n/10 del usua-rio, la API tam-bi[]en pue-de pro-por-cio-nar a los
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+
+ []
+
 <./images/APIWebSpotify.jpg, id=10, 737.75626pt x 516.93124pt>
 File: ./images/APIWebSpotify.jpg Graphic file (type jpg)
 
 <use ./images/APIWebSpotify.jpg>
-Package pdftex.def Info: ./images/APIWebSpotify.jpg used on input line 69.
+Package pdftex.def Info: ./images/APIWebSpotify.jpg used on input line 72.
 (pdftex.def)             Requested size: 147.54863pt x 103.38441pt.
 
-Underfull \hbox (badness 1817) in paragraph at lines 76--78
+Underfull \hbox (badness 1817) in paragraph at lines 79--81
 []\OT1/ptm/m/n/10 La API de Spo-tify per-mi-te, adem[]as de ge-ne-rar una
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--78
+Underfull \hbox (badness 10000) in paragraph at lines 79--81
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--91
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 94--95
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
 
  []
 
@@ -842,7 +842,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 97--98
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--100
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
 
  []
 
@@ -850,7 +855,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 99--100
 File: ./images/heavyMetalPlaylist.jpg Graphic file (type jpg)
 
 <use ./images/heavyMetalPlaylist.jpg>
-Package pdftex.def Info: ./images/heavyMetalPlaylist.jpg used on input line 103
+Package pdftex.def Info: ./images/heavyMetalPlaylist.jpg used on input line 106
 .
 (pdftex.def)             Requested size: 118.78868pt x 116.53033pt.
 
@@ -858,34 +863,34 @@ Package pdftex.def Info: ./images/heavyMetalPlaylist.jpg used on input line 103
 File: ./images/mexicanoPlaylist.jpg Graphic file (type jpg)
 
 <use ./images/mexicanoPlaylist.jpg>
-Package pdftex.def Info: ./images/mexicanoPlaylist.jpg used on input line 104.
+Package pdftex.def Info: ./images/mexicanoPlaylist.jpg used on input line 107.
 (pdftex.def)             Requested size: 116.59743pt x 116.59743pt.
 
 <./images/rockPlaylist.jpg, id=13, 963.6pt x 963.6pt>
 File: ./images/rockPlaylist.jpg Graphic file (type jpg)
 
 <use ./images/rockPlaylist.jpg>
-Package pdftex.def Info: ./images/rockPlaylist.jpg used on input line 105.
+Package pdftex.def Info: ./images/rockPlaylist.jpg used on input line 108.
 (pdftex.def)             Requested size: 120.4497pt x 120.4497pt.
 
 <./images/popPlaylist.jpg, id=14, 963.6pt x 963.6pt>
 File: ./images/popPlaylist.jpg Graphic file (type jpg)
 
 <use ./images/popPlaylist.jpg>
-Package pdftex.def Info: ./images/popPlaylist.jpg used on input line 106.
+Package pdftex.def Info: ./images/popPlaylist.jpg used on input line 109.
 (pdftex.def)             Requested size: 120.4497pt x 120.4497pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--111
+Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
  []
 
 [2 <./images/APIWebSpotify.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 113--115
+Underfull \hbox (badness 10000) in paragraph at lines 116--118
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--117
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
 
  []
 
@@ -893,25 +898,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 116--117
 File: ./images/redNeuronal.png Graphic file (type png)
 
 <use ./images/redNeuronal.png>
-Package pdftex.def Info: ./images/redNeuronal.png used on input line 120.
+Package pdftex.def Info: ./images/redNeuronal.png used on input line 123.
 (pdftex.def)             Requested size: 250.7323pt x 115.4292pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--135
+Underfull \hbox (badness 10000) in paragraph at lines 136--138
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 138--139
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--143
+Underfull \hbox (badness 10000) in paragraph at lines 144--146
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--143
+Underfull \hbox (badness 10000) in paragraph at lines 144--146
 
  []
 
@@ -920,27 +925,27 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 190--192
-
- []
 
 [3 <./images/heavyMetalPlaylist.jpg> <./images/mexicanoPlaylist.jpg> <./images/
 rockPlaylist.jpg> <./images/popPlaylist.jpg> <./images/redNeuronal.png>]
-Underfull \hbox (badness 4254) in paragraph at lines 199--202
+Underfull \hbox (badness 10000) in paragraph at lines 195--196
+
+ []
+
+
+Underfull \hbox (badness 4254) in paragraph at lines 203--206
 []\OT1/ptm/m/n/8 Matich, D. J. (2001). Re-des Neu-ro-na-les: Con-cep-tos B[]asi
 -cos y
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 199--202
+Underfull \hbox (badness 10000) in paragraph at lines 203--206
 \OML/cmm/m/it/8 =\OT1/cmr/m/n/8 5[]\OML/cmm/m/it/8 nio=orientadora\OT1/cmr/m/n/
 8 1\OML/cmm/m/it/8 =monograias=matich \OMS/cmsy/m/n/8 ^^@
  []
 
 
-Underfull \hbox (badness 3407) in paragraph at lines 205--207
+Underfull \hbox (badness 3407) in paragraph at lines 212--214
 []\OT1/ptm/m/n/8 Spotify for De-ve-lo-pers, Plat-form Do-cu-men-ta-tion, from $
 \OML/cmm/m/it/8 https \OT1/cmr/m/n/8 :
  []
@@ -961,35 +966,31 @@ Before submitting the final camera ready copy, remember to:
 ] (./NNS.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
-)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+) ) 
 Here is how much of TeX's memory you used:
- 5851 strings out of 493014
- 88609 string characters out of 6133351
- 184748 words of memory out of 5000000
- 9302 multiletter control sequences out of 15000+600000
+ 5852 strings out of 493014
+ 88615 string characters out of 6133351
+ 184752 words of memory out of 5000000
+ 9303 multiletter control sequences out of 15000+600000
  36841 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,8n,42p,990b,384s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
-xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
-live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texli
-ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive
-/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2
-016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/201
-6/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2016/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016/texmf-d
-ist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/
-type1/urw/times/utmbi8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw
-/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utm
-ri8a.pfb>
-Output written on NNS.pdf (4 pages, 342250 bytes).
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/
+texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/t
+exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
+xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texl
+ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texliv
+e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/
+2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/20
+16/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2016/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016/texmf-
+dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts
+/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/ur
+w/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/ut
+mri8a.pfb>
+Output written on NNS.pdf (4 pages, 342630 bytes).
 PDF statistics:
  80 PDF objects out of 1000 (max. 8388607)
  53 compressed objects within 1 object stream
